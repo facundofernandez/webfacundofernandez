@@ -1,0 +1,106 @@
+body,table,div,span,tr,td{padding:0;margin:0;}
+
+body{
+	margin:20px;
+	background-image: url('dark_dotted2.png');
+	background-attachment: fixed;
+}
+
+h1{ color:#fff;text-align:center;font-family: 'Patua One', cursive;font-size:55px;}
+
+
+#form{width:500px;margin:0 auto;}
+#btnAdd{
+	width:8%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+#btnAdd:hover{cursor:pointer}
+
+#buscar {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#buscar input{
+	width:90%;
+	font-size:25px;
+	/* margin:40px auto 10px auto; */
+	display: inline-block;
+	padding:5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	outline:0;
+	border:1 solid #ccc;
+}
+
+#formInput {margin: 20px 0;}
+#formInput input{width:49%;
+	font-size:20px;
+	padding:5px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */}
+
+#buscar input::-webkit-input-placeholder {
+  text-align:center;
+}
+
+#buscar input:-moz-placeholder { /* Firefox 18- */
+   text-align:center; 
+}
+
+#buscar input::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;  
+}
+
+#buscar input:-ms-input-placeholder {  
+   text-align:center;  
+}
+
+#tItem{
+	width:500px;
+	margin:10px auto;
+	color:#fff;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#tItem td{ padding:5px;width:50%;}
+#tItem tr:hover{ background-color: rgba(105,105,105,0.3);cursor:pointer;}
+
+.ocultar{display:none;}
+
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+
+@media only screen and (max-width: 600px) {
+    #buscar{width:100%;}
+    #buscar input{width:80%;}
+    #btnAdd{min-width:15%;max-width:8%;}
+	
+	#tItem{
+		width:100%;
+
+	}
+	
+	h1{font-size:40px}
+	
+	#buscar input::-webkit-input-placeholder {
+		font-size:20px;
+	}
+
+	#buscar input:-moz-placeholder { /* Firefox 18- */
+		font-size:20px; 
+	}
+
+	#buscar input::-moz-placeholder {  /* Firefox 19+ */
+		font-size:20px; 
+	}
+
+	#buscar input:-ms-input-placeholder {  
+	   font-size:20px; 
+	}
+}
