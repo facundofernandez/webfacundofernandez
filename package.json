@@ -1,0 +1,31 @@
+{
+  "name": "facundofernandez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1",
+    "gulp-less": "^3.0.5",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/facundofernandez/webfacundofernandez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facundofernandez/webfacundofernandez/issues"
+  },
+  "homepage": "https://github.com/facundofernandez/webfacundofernandez#readme"
+}
