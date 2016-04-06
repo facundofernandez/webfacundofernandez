@@ -1,0 +1,176 @@
+.contains-figure {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+.contains-figure figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    /*padding: 10px*/
+  }
+
+  .contains-figure figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
+
+  .contains-figure figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+  }
+
+  .contains-figure figure h2 span {
+    font-weight: 800;
+  }
+
+.contains-figure figure h2,
+.contains-figure figure p {
+margin: 0;
+}
+
+.contains-figure figure p {
+letter-spacing: 1px;
+font-size: 68.5%;
+}
+
+
+  .contains-figure figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.contains-figure figure figcaption,
+.contains-figure figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contains-figure figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.contains-figure figure h2,
+.contains-figure figure p {
+  margin: 0;
+}
+.contains-figure figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.contains-figure figure h2 span {
+  font-weight: 800;
+}
+
+.contains-figure figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+.contains-figure figure h2,
+.contains-figure figure p {
+  margin: 0;
+}
+
+.contains-figure figure figcaption::before,
+.contains-figure figure figcaption::after {
+  pointer-events: none;
+}
+
+
+/*Menu de filtro*/
+
+nav{
+
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+padding:10px;
+width: 100%;
+/*background: rgba(255, 0, 0, 0.5);*/
+}
+
+nav .menu-filtro{
+/*width: 100%;*/
+list-style: none;
+/*background-color: #444;*/
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+nav .menu-filtro-item {
+/*font-family: 'Oswald', sans-serif;*/
+font-size: 1.2em;
+
+/*line-height: 40px;*/
+/*height: 40px;*/
+/*border-bottom: 1px solid #888;*/
+}
+
+nav .menu-filtro-item span {
+
+color: #fff;
+/*display: block;*/
+// border:0;
+transition: 300ms all;
+}
+nav .menu-filtro-item:hover span {
+/*text-decoration: underline;;*/
+/*color: rgba(0, 0, 0, 0.5);*/
+cursor: pointer;
+// border-bottom: 5px solid #fff;
+color:#009B92
+
+}
+
+
+@media screen and (min-width: 600px) {
+nav .menu-filtro-item {
+/*width: 120px;*/
+padding-right: 10px;
+border-bottom: none;
+height: 50px;
+line-height: 50px;
+font-size: 1.4em;
+display: inline-block;
+
+}
+
+}
+
+figure{transition: 300ms all;}
+.oculto{
+/**/
+transform: translateY(20px);
+/*transform: scale(0);*/
+opacity: 0
+
+}
+
+.display{display: none}
