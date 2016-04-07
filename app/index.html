@@ -15,11 +15,14 @@
   		<h2 id="subtitulo">Web Developer / UI-UX / Photographer</h2>
 
   		<div class="trabajos tooltip">
-  			<span data-title="Trabajos"><i class="fa fa-briefcase"></i></span>
+  			<span data-title="Works"><i class="fa fa-briefcase"></i></span>
   		</div>
   		<ul class="menu">
+  			<li class="info tooltip">
+            <span data-title="About me"><i class="fa fa-info-circle"></i></span>
+        </li>
   			<li class="linkedin tooltip">
-          <a data-title="Linkedi" href="https://ar.linkedin.com/in/facundofernandez">
+          <a data-title="Linkedin" href="https://ar.linkedin.com/in/facundofernandez">
             <i class="fa fa-linkedin-square"></i>
           </a>
         </li>
@@ -35,21 +38,58 @@
         </li>
   			<!-- <li class="facebook"><a href="#"><i class="fa fa-facebook-official"></i></a></li> -->
   			<!--<li class="twitter tooltip"><a data-title="Twitter" href="https://twitter.com/Facu__FF"><i class="fa fa-twitter-square"></i></a></li>-->
-  			<li class="wordpress tooltip">
+  			<!-- <li class="wordpress tooltip">
           <a data-title="Blog" href="#">
             <i class="fa fa-wordpress"></i>
           </a>
-        </li>
+        </li> -->
   			<!--<li class="youtube tooltip"><a data-title="Youtube" href="https://www.youtube.com/channel/UCAdKkq-BKr2I0pIWcIMo8Jg/playlists"><i class="fa fa-youtube-square"></i></a></li>-->
   		</ul>
   	</section>
+    <section class="me">
+      <div class="me-content">
+
+          <img src="https://avatars3.githubusercontent.com/u/5879230?v=3&s=200" alt="">
+          <p>FAcundo Fernandez</p>
+          <p>Greek and keepacker</p>
+          <p>Love Js and love Trip</p>
+          <p>Photograth Junior</p>
+          <p></p>
+      </div>
+      <div class="me-content">
+
+        <p>Skill:</p>
+        <ul class="menu-skill">
+          <li class="menu-skill-item"><i class="fa fa-circle"></i> PHP</li>
+          <div class="chart" data-percent="73">73%</div>
+
+
+          <li class="menu-skill-item"><i class="fa fa-circle"></i> Js</li>
+          <li class="menu-skill-item"><i class="fa fa-circle"></i> Css</li>
+        </ul>
+      </div>
+        <div class="me-content">
+        <p>Kit Tecnologics than i use:</p>
+        <ul class="menu-kit">
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> PHP</li>
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> NodeJs</li>
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> Js</li>
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> JQuery</li>
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> AngularJS</li>
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> Sass</li>
+          <li class="menu-kit-item"><i class="fa fa-circle"></i> Gulp</li>
+        </ul>
+
+      </div>
+
+    </section>
     <section class="work">
         <a name="ancla"></a>
         <nav>
           <ul class="menu-filtro">
-              <li id="filtro-diseno" class="menu-filtro-item"><span>Diseno</span></li>
-              <li id="filtro-web" class="menu-filtro-item"><span>Programacion</span></li>
-              <li id="filtro-foto" class="menu-filtro-item"><span>Fotografia</span></li>
+              <li id="filtro-diseno" class="menu-filtro-item"><span>Diseño</span></li>
+              <li id="filtro-web" class="menu-filtro-item"><span>Programación</span></li>
+              <li id="filtro-foto" class="menu-filtro-item"><span>Fotografía</span></li>
               <li id="filtro-all" class="menu-filtro-item">/ <span>Todos</span></li>
           </ul>
         </nav>
@@ -96,7 +136,7 @@
       					<a href="#"><span class="icon-eye"></span></a>
       					<a href="#"><span class="icon-paper-clip"></span></a>
       				</p>
-      				<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+      				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do .</p>
       			</figcaption>
       		</figure>
 
@@ -118,7 +158,8 @@
       			<img src="http://tympanus.net/Development/HoverEffectIdeas/img/5.jpg" alt="img14">
       			<figcaption>
       				<h2>Holy <span>Sadie</span></h2>
-      				<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+
+      				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do .</p>
       				<a href="#">View more</a>
       			</figcaption>
       		</figure>
@@ -127,7 +168,7 @@
 
     </section>
     <section class="tecno-usadas">
-      
+
     </section>
     <footer>
 
@@ -135,7 +176,23 @@
 
     <script type="text/javascript" src="dist/js/velocity.min.js" ></script>
   	<script type="text/javascript" src="dist/js/app.js" ></script>
-  <!--	<script>
+    <script src="dist/js/easypiechart.min.js"></script>
+    <script>
+        var element = document.querySelector('.chart');
+        new EasyPieChart(element, {
+          easing: 'easeInOut',
+				barColor: '#d82c2e',
+				trackColor: '#01A89E',
+				scaleColor: false,
+				lineWidth: 4,
+				size: 152,
+				// onStep: function(from, to, percent) {
+				// 	element.find('.percent').text(Math.round(percent));
+				// }
+            // your options goes here
+        });
+    </script>
+  	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -144,6 +201,6 @@
   		ga('create', 'UA-41026727-2', 'auto');
   		ga('send', 'pageview');
 
-  	</script>-->
+  	</script>
   </body>
 </html>
